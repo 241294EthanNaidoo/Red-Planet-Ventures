@@ -1,0 +1,355 @@
+<!DOCTYPE html><!--type of html-->
+<html lang="en"><!--html starts here-->
+<head><!--admin section-->
+
+    <meta charset="UTF-8"><!--character set / types of characters-->
+    <meta http-equiv="X-UX-Compatible" content="IE-edge"><!--types of browser it is compatible with-->
+    <meta name="viewport" content="width-device-width, initial-scale-1.0"><!--website as wide as browser-->
+    <meta name="keyword" content="HTML, CSS, Template, Bootstrap"> <!--search words for users-->
+    <meta name="author" content="Ethan Naidoo 241294">
+
+    <title> Flights </title>
+
+    <!--link bootstrap
+        link javascript
+        link Google Font files
+        link CSS-->
+
+    <link rel="stylesheet" href="css/flights.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="headerSectionFlight">
+            <nav>
+                <div class="topNavFlight">
+                    <div class="navFlexFlight"><img src="Assets/Images/logo.png" width="280px"></div>
+                    <div class="navFlexFlight">
+                        <a href="index.html">Home</a>
+                        <a href="Pages/flights.html">Flights</a>
+                        <a href="Pages/contact.html">Contact</a>
+                    </div>
+                    <div class="navFlex"><input onclick="search()" input type="text" name="search">Search</input></div>
+                </div>
+            </nav>
+
+            <div class="headerFlexFlight">
+                <div class="flexItemFlight"> 
+                    <h1>BOOK A FLIGHT</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="flightsection1">
+            <div class="flexContainer">
+                <div class="flexItem2"> <img src="Assets/Images/flighhtMars.png" width="280px"> </div>
+                <div class="flexItem2"> 
+                    <div class="localFont">
+                        <div class="wordsRight">
+                            <h1>The Classic Mars Experience</h1> 
+                            <h3>R 25,000,000      R50,000.00</h3>  
+                            <p>Embark on a Mars vacation: red deserts, ancient
+                                relics, and towering canyons await. Enjoy low gravity
+                                hiking, rover trips to Olympus Mons, and stargazing
+                                under Phobos and Deimos. Unforgettable adventures
+                                beckon on the rust colored landscapes of the Red Planet.</p>
+                        </div>
+                        <div class="section1Button1">
+                            <button class="btn btn-left" onclick="decreaseMars(); total()">-</button>
+                            <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsMars" >
+                            <button class="btn btn-right" onclick="increaseMars(); total()">+</button>
+                         </div></div>
+                        <div class="section1Button2"><button id="bookNOW" onclick="booking()">Book Now</button></div>
+
+                        <div class="flexText">
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>SKU</p></div>
+                                    <div class="flexColItem"><p>Shuttle</p></div>
+                                    <div class="flexColItem"><p>Tags</p></div>
+                                    <div class="flexColItem"><p>Date</p></div>
+                                </div>
+                            </div>
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>: SS001</p></div>
+                                    <div class="flexColItem"><p>: The Opulence</p></div>
+                                    <div class="flexColItem"><p>: Mars, Luxury, Sale</p></div>
+                                    <div class="flexColItem"><p>: 16 JUne - 19 July</p></div>
+                                </div>
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section>
+        <div class="flightsection2">
+            <div class="flexContainer">
+                <div class="flexItem2"> <img src="Assets/Images/flightNeptune.png" width="280px"> </div>
+                <div class="flexItem2"> 
+                    <div class="localFont">
+                        <div class="wordsRight">
+                            <h1>Neptune's Cosmic Dive</h1> 
+                            <h3>R 45,000,000</h3>  
+                            <p>Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness
+                                surreal vistas of swirling clouds and rings. Experience weightlessness and
+                                explore frigid oceans. Engage in thrilling spacewalks, observe celestial
+                                phenomena, and savor gourmet space cuisine. An unforgettable
+                                adventure awaits, blending luxury with cosmic exploration.</p>
+                        </div>
+                        <div class="section2Button1">
+                            <button class="btn btn-left" onclick="decreaseNeptune(); total()">-</button>
+                            <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsNeptune" >
+                            <button class="btn btn-right" onclick="increaseNeptune(); total()">+</button>
+                         </div></div>
+                        <div class="section2Button2"><button id="bookNOW" onclick="booking()">Book Now</button></div>
+
+                        <div class="flexText2">
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>SKU</p></div>
+                                    <div class="flexColItem"><p>Shuttle</p></div>
+                                    <div class="flexColItem"><p>Tags</p></div>
+                                    <div class="flexColItem"><p>Date</p></div>
+                                </div>
+                            </div>
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>: SS405</p></div>
+                                    <div class="flexColItem"><p>: The Voyager</p></div>
+                                    <div class="flexColItem"><p>: Neptune, Commercial, Gourmet Experience</p></div>
+                                    <div class="flexColItem"><p>: 4 April - 28 March</p></div>
+                                </div>
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section>
+        <div class="flightsection3">
+            <div class="flexContainer">
+                <div class="flexItem2"> <img src="Assets/Images/flightJupiter.png" width="280px"> </div>
+                <div class="flexItem2"> 
+                    <div class="localFont">
+                        <div class="wordsRight">
+                            <h1>The Giant's Journey</h1> 
+                            <h3>R 65,000,000</h3>  
+                            <p>Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its
+                                majestic storms and swirling atmosphere. Dive into metallic hydrogen
+                                oceans. Explore its moons, each a world unto itself. Engage in gravity
+                                surfing, comet chasing, and space excursions. Experience cosmic wonder
+                                in luxury, blending exploration with adventure.</p>
+                        </div>
+                        <div class="section3Button1">
+                            <button class="btn btn-left" onclick="decreaseJupiter(); total()">-</button>
+                            <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsJupiter" >
+                            <button class="btn btn-right" onclick="increaseJupiter(); total()">+</button>
+                         </div></div>
+                        <div class="section3Button2"><button id="bookNOW" onclick="booking()">Book Now</button></div>
+
+                        <div class="flexText3">
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>SKU</p></div>
+                                    <div class="flexColItem"><p>Shuttle</p></div>
+                                    <div class="flexColItem"><p>Tags</p></div>
+                                    <div class="flexColItem"><p>Date</p></div>
+                                </div>
+                            </div>
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>: SS606</p></div>
+                                    <div class="flexColItem"><p>: The Odyssey</p></div>
+                                    <div class="flexColItem"><p>: Jupiter, Luxury, Adventure</p></div>
+                                    <div class="flexColItem"><p>: 5 June - 30 July</p></div>
+                                </div>
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section>
+        <div class="flightsection4">
+            <div class="flexContainer">
+                <div class="flexItem2"> <img src="Assets/Images/flightSaturn" width="280px"> </div>
+                <div class="flexItem2"> 
+                    <div class="localFont">
+                        <div class="wordsRight">
+                            <h1>Ring Around a Saturn</h1> 
+                            <h3>R 40,000,000</h3>  
+                            <p>Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer."
+                                Marvel at its iconic rings and turbulent storms. Explore its diverse moons,
+                                from icy Enceladus to mysterious Titan, with activities including rover
+                                expeditions and cave exploration. Experience the wonders of the cosmos
+                                amidst luxurious accommodations, where the thrill of discovery
+                                intertwines seamlessly with the excitement of adventure.</p>
+                        </div>
+                        <div class="section4Button1">
+                            <button class="btn btn-left" onclick="decreaseSaturn(); total()">-</button>
+                            <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsSaturn" >
+                            <button class="btn btn-right" onclick="increaseSaturn(); total()">+</button>
+                         </div></div>
+                        <div class="section4Button2"><button id="bookNOW" onclick="booking()">Book Now</button></div>
+
+                        <div class="flexText4">
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>SKU</p></div>
+                                    <div class="flexColItem"><p>Shuttle</p></div>
+                                    <div class="flexColItem"><p>Tags</p></div>
+                                    <div class="flexColItem"><p>Date</p></div>
+                                </div>
+                            </div>
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>: SS333</p></div>
+                                    <div class="flexColItem"><p>: The Explorer</p></div>
+                                    <div class="flexColItem"><p>: Saturn, Luxury, Adventure</p></div>
+                                    <div class="flexColItem"><p>: 4 April - 28 March</p></div>
+                                </div>
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section>
+        <div class="flightsection5">
+            <div class="flexContainer">
+                <div class="flexItem2"> <img src="Assets/Images/flightUranus.png" width="280px"> </div>
+                <div class="flexItem2"> 
+                    <div class="localFont">
+                        <div class="wordsRight">
+                            <h1>Uranus Uncharted</h1> 
+                            <h3>R 50,000,000</h3>  
+                            <p>Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour.
+                                Explore its icy atmosphere and captivating moons. Experience thrilling
+                                zero-gravity excursions, witness mesmerizing auroras, and immerse
+                                yourself in celestial photography workshops. With luxury
+                                accommodations and expert guides, discover the wonders of Uranus in a
+                                journey of a lifetime</p>
+                        </div>
+                        <div class="section5Button1">
+                            <button class="btn btn-left" onclick="decreaseUranus(); total()">-</button>
+                            <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsUranus" >
+                            <button class="btn btn-right" onclick="increaseUranus(); total()">+</button>
+                         </div></div>
+                        <div class="section5Button2"><button id="bookNOW" onclick="booking()">Book Now</button></div>
+
+                        <div class="flexText5">
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>SKU</p></div>
+                                    <div class="flexColItem"><p>Shuttle</p></div>
+                                    <div class="flexColItem"><p>Tags</p></div>
+                                    <div class="flexColItem"><p>Date</p></div>
+                                </div>
+                            </div>
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>: SS735</p></div>
+                                    <div class="flexColItem"><p>: The Endeavor</p></div>
+                                    <div class="flexColItem"><p>: Uranus, Workshop, Adventure</p></div>
+                                    <div class="flexColItem"><p>: 16 May - 19 July</p></div>
+                                </div>
+                            </div>        
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section>
+        <div class="flightsection6">
+            <div class="flexContainer">
+                <div class="flexItem2"> <img src="Assets/Images/flightMoon.png" width="280px"> </div>
+                <div class="flexItem2"> 
+                    <div class="localFont">
+                        <div class="wordsRight">
+                            <h1>Moonlight Meander</h1> 
+                            <h3>R 15,000,000</h3>  
+                            <p>Experience the ultimate lunar getaway with our "Moonlight Meander"
+                                package. Depart Earths atmosphere aboard the "Celestial Cruiser" for a
+                                short but unforgettable journey to the Moon. Enjoy lunar walks,
+                                breathtaking views of Earthrise, and stargazing under the moons serene
+                                glow. Immerse yourself in luxury accommodations amidst the tranquility
+                                of space.</p>
+                        </div>
+                        <div class="section6Button1">
+                            <button class="btn btn-left" onclick="decreaseMoon(); total()">-</button>
+                            <input type="text" placeholder="Number of bugs" value="0" class="input-box" id="ticketsMoon" >
+                            <button class="btn btn-right" onclick="increaseMoon(); total()">+</button>
+                         </div></div>
+                        <div class="section6Button2"><button id="bookNOW" onclick="booking()">Book Now</button></div>
+
+                        <div class="flexText6">
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>SKU</p></div>
+                                    <div class="flexColItem"><p>Shuttle</p></div>
+                                    <div class="flexColItem"><p>Tags</p></div>
+                                    <div class="flexColItem"><p>Date</p></div>
+                                </div>
+                            </div>
+                            <div class="flextextItem">
+                                <div class="flextextCol">
+                                    <div class="flexColItem"><p>: SS451</p></div>
+                                    <div class="flexColItem"><p>: The Voyager</p></div>
+                                    <div class="flexColItem"><p>: Moon, Commercial, Romantic</p></div>
+                                    <div class="flexColItem"><p>: 5 August - 12 August</p></div>
+                                </div>
+                            </div>        
+                        </div> 
+                    </div>
+                    <div class="section3Button3"><button onclick="cartView()">View Cart</button></div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <table>
+        tr>
+        <td colspan="4"> <p>Total: <span id="total"></span></p></td>
+      </tr>
+    </table>
+
+    <section>
+        <div class="bottomFlex"><img src="Assets/Images/logo.png" width="280px"></div>
+        <div><h4>Company</h4></div>
+        <div class="bottomFlex">
+            <a href="index.html">Home</a>
+            <a href="Pages/flights.html">Flights</a>
+            <a href="Pages/contact.html">Contact</a>
+        </div>
+        <div class="wordsbottom">
+            <h4>Social Medi Links</h4>
+        </div>
+        <div class="imageCol2">
+            <div class="flexImage4"> <img src="Assets/Images/smInstagram.png"> </div>
+            <div class="flexImage4"> <img src="Assets/Images/smX.png"> </div>
+            <div class="flexImage4"> <img src="Assets/Images/smTicktock.png"> </div>
+            <div class="flexImage4"> <img src="Assets/Images/smFacebook.png"> </div>
+        </div>
+    </section>
+  
+    <footer>
+        <p> All Rights Reserved @ Open Window 2024 </p>
+    </footer>
+
+</body>
+</html>

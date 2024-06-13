@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topNavContact{
+    position: absolute;
+    width: 82%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    opacity: 0.5;
+    padding: 0 3em;
+    border-radius:30px;
+    margin-top: 34px;
+    margin-left: 66px;
+    margin-right: 90px;
+    font-size: 20px;
+}
+
+.navFlexContact a{
+    padding: 15px;
+}
+
+.headerSectionContact{
+    background-image: url(../Assets/Images/homePageHeader.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.headerFlexContact{
+    display: flex;
+    height: 600px;
+    padding: 6em;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.topNavContact a:hover {
+    color: #ff0000;
+}
+
+.section2{
+    background-color: white;
+    background-size: cover;
+    height: 80vh;
+}
+
+.flexContainer2{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: justify;
+    align-items: center;
+}
+
+.flexItem3{
+    padding: 100px;
+    flex: 50%;
+}
+
+.flexImage img{
+    width: 100%;
+    left: 110px;
+    right: 50px;
+}
+
+.wordsLeft{
+    padding: 100px;
+    font-size: 20px;
+    right: auto;
+    font-family: 'Porter Sans Block';
+    font-size: 20px;
+}
+
+.wordsLeft h3{
+    color: cyan;
+}
+
+.wordsLeft h1{
+    color: rgb(35, 0, 90);
+}
+
+.wordsLeft p{
+    color: rgb(35, 0, 90);
+    opacity: 0.5;
+}
+
+.flexLeft{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.wordsMiddle h3{
+    color: cyan;
+}
+
+.wordsMiddle h1{
+    color: rgb(35, 0, 90);
+}
+
+.flexImage4 img{
+    width: 80%;
+    height: 270px;
+    max-width: 100%;
+}
+
+.imageCol{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.wordsbottomLeft h3{
+    color: cyan;
+}
+
+.wordsbottomLeft h1{
+    color: rgb(35, 0, 90);
+}
+
+.flexMaps{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 4em 0;
+    width: 50%;
+
+}
+
+.flexRight{
+    display: flex;
+    align-items: right;
+    padding: 0 4em;
+    width: 50%;
+}
+
+.formContainer{
+    width: 40%; 
+    /* max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; */
+}
+
+#contact{
+    background-image: url(../Assets/Images/formBack.png);
+    background-size: cover;
+    background-position: right;     
+    padding: 2em 4em;
+    width: 100%;
+    margin: 50px 0;
+    border-radius: 14px;
+}
+
+#contact h3{
+    color: #ffffff;
+    display: block;
+    font-family: 'Porter Sans Block', cursive;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#contact input, #contact textarea, #contact button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+fieldset{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    border: 1px solid #CCC;
+    background-color: #f3f3f3;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact textarea{
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button{
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    background-color: red;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 14px;
+}
+
+.imageCol2{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.bottomFlex a{
+    padding: 15px;
+}
+
+
+.bottomFlex{
+    display: flex;
+    height: 600px;
+    padding: 6em;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
